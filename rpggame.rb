@@ -119,7 +119,28 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 							puts "Choose a number 0-2 for your next decision."
 							useropt11200 = gets.chomp.to_i
 							options11200 = ["You approach with your sword drawn, ready for battle.", "You quickly run away, deep into the forest.", "You attempt to sneak around, hoping for a closer look."]
-						elsif useropt 1120 == 2
+							puts options11200[useropt11200]
+								if useropt11200 == 0
+									puts "You fight fiercely and severely injure the Dark Man, however you sustained injuries as well."
+									puts "You both pass out on the damp sand."
+								elsif useropt11200 == 1
+									puts "You're soon surrounded by trees and you're lost once again. As time goes on starvation sets in. This is the end of the line."
+									puts "Game over! Please play again."
+								else 
+									puts "The sand sinks below your feet as you draw nearer. The man hasn't made any forms of movement."
+									puts "Choose a number 0-2 for your next decision."
+									useropt112000 = gets.chomp.to_i 
+									options112000 = ["You move even closer and the Dark Man begins to turn...", "You cautiously approach, the man still doesn't know you're there.", "You make a slight noise and the man suddenly turns. He fires a spell and you're frozen."]
+									puts options112000[useropt112000]
+									if useropt112000 == 0
+										puts "Combat has begun. You draw your sword, the Dark Man draws his own, and a fierce battle ensues."
+									elsif useropt112000 == 1
+										puts "As you approach, you start to see the man's dark, skeletal looking face..."
+									else 
+										puts "Game over! Please play again!"
+									end
+									end
+						else
 							puts "You grow fond of the couple and you help them, even as they grow old. This is the end of the line."
 							puts "Game over! Please play again."
 						end
