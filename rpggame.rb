@@ -136,6 +136,7 @@ if input.downcase == "yes"
 	puts game1
 		
 elsif input.downcase == "no"
+	puts "Are you sure? (yes or no)"
 	sure = gets.chomp
 	if sure.downcase == "yes"
 	puts "Come back another time."
