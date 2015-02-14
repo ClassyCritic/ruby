@@ -14,6 +14,8 @@
 
 
 puts "Hello there!"
+puts "Welcome to End of the Line!"
+puts "By: ClassyCritic"
 puts "What is your name?"
 name = gets.chomp
 puts "Nice to meet you #{name}!"
@@ -94,6 +96,34 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 				useropt112 = gets.chomp.to_i
 				options112 = ["You approach the house and introduce yourself to the man and woman.", "You attack the house, hoping to steal whatever valuables they have.", "You continue on and avoid the house completely."]
 				puts options112[useropt112]
+					if useropt112 == 0
+						puts "As you enter the home, you notice how neat it is."
+						puts "You get to know the family and decide to stay forever. This is the end of the line."
+						puts "Game over! Please play again!"
+					elsif useropt112 == 1
+						puts "You break into the house, yelling and swinging your sword..."
+						puts "A man appears behind you and before you know it, it's your goods that are being stolen. This is the end of the line."
+						puts "Game over! Please play again."
+					else
+						puts "As you walk around the house you see a large lake and approach it."
+						puts "Choose a number 0-2 for your next decision."
+						useropt1120 = gets.chomp.to_i
+						options1120 = ["You enter the lake and bathe. However before long, your legs begin to bleed. This lake is infested with odd creatures!", "You spot a man from across the lake.", "You meet an old couple and they show you the surrounding area and welcome you back to their house."]
+						puts options1120[useropt1120]
+					end
+						if useropt1120 == 0
+							puts "You slowly bleed out, your legs can't carry you. This is the end of the line."
+							puts "Game over! Please play again."
+						elsif useropt1120 == 1
+							puts "The mysterious man is surrounded by a dark aura."
+							puts "Choose a number 0-2 for your next decision."
+							useropt11200 = gets.chomp.to_i
+							options11200 = ["You approach with your sword drawn, ready for battle.", "You quickly run away, deep into the forest.", "You attempt to sneak around, hoping for a closer look."]
+						else
+							puts "You grow fond of the couple and you help them, even as they grow old. This is the end of the line."
+							puts "Game over! Please play again."
+						end
+						
 				end
 	else
 		puts "As you draw closer to the forest you see several bears and other creatures."
