@@ -123,10 +123,36 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 								if useropt11200 == 0
 									puts "You fight fiercely and severely injure the Dark Man, however you sustained injuries as well."
 									puts "You both pass out on the damp sand."
+									puts "When you awaken, you're being dragged."
+									puts "Choose a number 0-2 for your next decision."
+									useropt1120000 = get.chomp.to_i
+									options1120000 = ["You draw your sword and attempt to kill your captor...", "You play dead, hoping they'll let you live.", "You observe your surroundings, looking for a way to escape."]
+									puts options1120000[useropt1120000]
+									if useropt1120000 == 0
+										puts "Your captor is well trained and you're immediately killed. This is the end of the line."
+										puts "Game over! Please play again."
+									elsif useropt1120000 == 1
+										puts "You lay limp as they drag you. The sounds of drums begin to fill your ears."
+										puts "Choose a number 0-2 for your next decision."
+										useropt103 = gets.chomp.to_i
+										options103 = ["You open your eyes to view your surroundings...", "You continue on with your eyes closed, still playing dead.", "You jump up and try to make a run for it."]
+										puts options103[useropt103]
+											if useropt103 == 0 
+												puts "You see several huts and tribal people all around you. The heat is sweltering."
+												puts "You continue to be dragged until you enter a large hut."
+											elsif useropt103 == 1
+												puts "Eventually you stop being dragged. You seem to be in a small building."
+											else 
+												puts "As you run, your back and legs are pierced by arrows. You ran, but not very fast. This is the end of the line."
+												puts "Game over! Please play again."
+											end
+									else 
+										puts "You notice several trees and hills in the area."
+									end
 								elsif useropt11200 == 1
 									puts "You're soon surrounded by trees and you're lost once again. As time goes on starvation sets in. This is the end of the line."
 									puts "Game over! Please play again."
-								else 
+								else  
 									puts "The sand sinks below your feet as you draw nearer. The man hasn't made any forms of movement."
 									puts "Choose a number 0-2 for your next decision."
 									useropt112000 = gets.chomp.to_i 
