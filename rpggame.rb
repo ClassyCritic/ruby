@@ -119,7 +119,7 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 							puts "Choose a number 0-2 for your next decision."
 							useropt11200 = gets.chomp.to_i
 							options11200 = ["You approach with your sword drawn, ready for battle.", "You quickly run away, deep into the forest.", "You attempt to sneak around, hoping for a closer look."]
-						else
+						elsif useropt 1120 == 2
 							puts "You grow fond of the couple and you help them, even as they grow old. This is the end of the line."
 							puts "Game over! Please play again."
 						end
