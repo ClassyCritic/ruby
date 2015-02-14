@@ -57,13 +57,12 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 		puts "As you draw closer to the forest you see several bears and other creatures."
 		puts "Please select a number 0-2 for your next decision."
 		useropt12 = gets.chomp.to_i
-		options12 = ["You return to the house.", "You enter the forest, prepared to fight.", "You try to sneak into the forest."]
+		options12 = ["You backtrack and come across a house.", "You enter the forest, prepared to fight.", "You try to sneak into the forest."]
 		puts options12[useropt12]
 			if useropt12 == 0
-				puts "You return to the house, hoping for some good fortune."
 				puts "Choose a number 0-2 for your next decision."
 				useropt120 = gets.chomp.to_i
-				options120 = ["You meet a man and a woman. They give you food and a place to stay.", "You attack the house, hoping to steal all provisions.", "You walk past the house again, and back into the forest."]
+				options120 = ["You meet a man and a woman. They give you food and a place to stay.", "You attack the house, hoping to steal all provisions.", "You walk past the house, and back into the forest."]
 				puts options120[useropt120]
 			elsif useropt12 == 1
 				puts "You draw your sword and enter the forest...."
