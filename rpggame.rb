@@ -256,5 +256,16 @@ elsif input.downcase == "no"
 	puts game1
 	end
 else 
-	puts "Rerun the program with a yes or no answer."
+	puts "Please answer with a yes or a no."
+	puts "Would you like to play?"
+	newinput = gets.chomp
+	if newinput.downcase == "yes"
+	puts game1 
+	elsif newinput.downcase == "no"
+	puts "Are you sure? (yes or no)"
+	sure1 = gets.chomp
+	end
+	if sure1.downcase == "yes"
+	puts "Come back another time."
+	end
 end
