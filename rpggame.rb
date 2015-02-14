@@ -42,7 +42,7 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 				puts options110[useropt110]
 					if useropt110 == 0
 						puts "You quicly run back towards the door!"
-						puts "The woman slams the door shut."
+						puts "A woman slams the door shut."
 						puts "The woman says, 'you're not leaving now precious'. This is the end of the line."
 						puts "Game over! Please play again!"
 					elsif useropt110 == 1
@@ -71,6 +71,23 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 				useropt111 = gets.chomp.to_i
 				options111 = ["You walk up to the old lady and introduce yourself.", "You sneak around the lady, hoping she won't notice you.", "You ask the lady for help and directions."]
 				puts options111[useropt111]
+					if useropt111 == 0
+						puts "You greet the lady and find that she's very kind."
+						puts "Choose a number 0-1 for your next decision." 
+						useropt1110 = gets.chomp.to_i
+						options1110 = ["You stay with the lady forever, living a long and peaceful life.", "You want to leave but the lady becomes sick. You stay to help her and never end up leaving."]
+						puts options1110[useropt1110]
+					elsif useropt111 == 1
+						puts "You try to sneak around the lady..."
+						puts "She quickly discovers you and attacks you."
+						puts "You overome her, but your wounds are too many. This is the end of the line."
+						puts "Game over! Thanks for playing!"
+					else 
+						puts "You approach the lady but quickly realize something is off."
+						puts "The lady is rabid and attacks you. You have no time to react. This is the end of the line."
+						puts "Game over! Please play again."
+					end
+		
 			else
 				puts "You notice a man inside the home, and a lady tending to her garden outside."
 				puts "Choose a number 0-2 for your next decision."
@@ -116,8 +133,26 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 						puts "Back in the cave the man is asleep..."
 						puts "Choose a number 0-2 for your next decision."
 						useropt1211 = gets.chomp.to_i
-						options1211 = ["You attack the man, hoping to escape.", "You attempt to sneak from the cave.", "You wake the man, and ask for more details."]
+						options1211 = ["You attack the man, hoping to escape.", "You attempt to sneak from the cave...", "You wake the man, and ask for more details."]
 						puts options1211[useropt1211]
+							if useropt1211 == 1
+								puts "You tip-toe slyly towards the exit..."
+								puts "Choose a number 0-2 to decide what happens next."
+								useropt12110 = gets.chomp.to_i
+								options12110 = ["You succesfully exit but you're immediately attacked by a bear. This is the end of the line.", "The man awakens and before you know it you're on the ground. This is the end of the line.", "You succesfully sneak a way into the dark night."]
+									puts options12110[useropt12110]
+									if useropt12110 == 2
+										puts "You slip through the darkness, hoping for some form of safety."
+									else 
+										puts "Game over! Please play again."
+										end
+							elsif useropt1211 == 0 
+								puts "The man was well prepared for an attack. He reacts quickly and his dagger plunges into your chest. This is the end of the line."
+								puts "Game over! Please play again."
+							else
+								puts "You find out that the man plans on having you for dinner. This is the end of the line."
+								puts "Game over! Thanks for being delicious!"
+							end
 					else 
 					puts "Game over. Please play again."
 					end
