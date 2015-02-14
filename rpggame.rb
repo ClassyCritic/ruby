@@ -26,7 +26,22 @@ puts "Please enter a number 0-2 for your first decision."
 useropt1 = gets.chomp.to_i
 options1 = ["You fall off a cliff and die.", "You find a house.", "You come across a forest."]
 	puts options1[useropt1]
+	if useropt1 == 0
+		puts "Game over! Try again!"
+	elsif useropt1 == 1
+		puts "You move towards the house..."
+		puts "Choose a number 0-2 for your next decision."
+		useropt11 = gets.chomp.to_i
+		options11 = ["You enter the house through the front door. It's very mysterious.", "You avoid the house and walk around.", "You investigate the house from the outside."]
+		puts options11[useropt11]
+	else
+		puts "As you draw closer to the forest you see several bears and other creatures."
+		puts "Please select a number 0-2 for your next decision."
+		useropt12 = gets.chomp.to_i
+		options12 = ["You return to the house.", "You enter the forest, prepared to fight.", "You try to sneak into the forest."]
+		puts options12[useropt12]
 	end
+end
 	
 if input.downcase == "yes"
 	puts game1
