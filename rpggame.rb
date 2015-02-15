@@ -223,6 +223,13 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 						useropt1202 = gets.chomp.to_i
 						options1202 = ["You charge into the forest, but it's many beasts soon overcome you. This is the end of the line", "As you charge, your ankle gives out from beneath you. This is the end of the line.", "You climb a tree and attempt to hide from the many dangers."]
 						puts options1202[useropt1202]
+						if useropt1202 == 0
+							puts "Game over! Please play again."
+						elsif useropt1202 == 1
+							puts "Game over! Please play again."
+						else
+							puts "You hide in safety until dawn breaks."
+						end
 					end
 			elsif useropt12 == 1
 				puts "You draw your sword and enter the forest...."
