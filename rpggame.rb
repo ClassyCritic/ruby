@@ -244,6 +244,10 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 									puts options12110[useropt12110]
 									if useropt12110 == 2
 										puts "You slip through the darkness, hoping for some form of safety."
+										puts "Choose a number 0-2 for your next decision."
+										useropt1410 = gets.chomp.to_i
+										options1410 = ["You come across a man and decide to ask him for help.", "You build a small hut, hoping to hide from the many dangers of the forest.", "You sleep in a tree until daybreak, hoping to remain hidden."]
+										puts options1410[useropt1410]				
 									else 
 										puts "Game over! Please play again."
 										end
