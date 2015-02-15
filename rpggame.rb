@@ -12,8 +12,6 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
 
-
-puts "Hello there!"
 puts "Welcome to End of the Line!"
 puts "By: ClassyCritic"
 puts "What is your name?"
@@ -273,7 +271,7 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 				puts "You tip-toe into the dark, intimidating forest..."
 				puts "Choose a number 0-2 for your next decision."
 				useropt122 = gets.chomp.to_i
-				options122 = ["The beasts detect you, but you somehow outrun them.", "The beasts catch your scent. There's no escaping. This is the end of the line.", "You sneak past, but are quickly lost in the vastness of the forest."]
+				options122 = ["The beasts detect you, but you somehow outrun them.", "The beasts catch your scent. There's no escaping. This is the end of the line.", "You sneak past, but are quickly lost in the vastness of the forest. This is the end of the line."]
 				puts options122[useropt122]
 				end
 	end
@@ -304,3 +302,4 @@ else
 	puts "Come back another time."
 	end
 end
+
