@@ -21,3 +21,10 @@ tipcost = bill * tip
 cost = bill + tipcost
 puts "Your tip should be #{tipcost} cents."
 puts "Your total cost should be #{cost}."
+
+puts "For more info type 'info'."
+infoput = gets.chomp
+if infoput.downcase == "info"
+puts "Created by: ClassyCritic"
+puts "Github: https://github.com/ClassyCritic"
+end
