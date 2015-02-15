@@ -125,7 +125,7 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 									puts "You both pass out on the damp sand."
 									puts "When you awaken, you're being dragged."
 									puts "Choose a number 0-2 for your next decision."
-									useropt1120000 = get.chomp.to_i
+									useropt1120000 = gets.chomp.to_i
 									options1120000 = ["You draw your sword and attempt to kill your captor...", "You play dead, hoping they'll let you live.", "You observe your surroundings, looking for a way to escape."]
 									puts options1120000[useropt1120000]
 									if useropt1120000 == 0
@@ -160,6 +160,30 @@ options1 = ["You fall off a cliff and die.", "You find a house.", "You come acro
 									puts options112000[useropt112000]
 									if useropt112000 == 0
 										puts "Combat has begun. You draw your sword, the Dark Man draws his own, and a fierce battle ensues."
+										puts "Choose a number 0-2 for your next decision."
+										useropt201 = gets.chomp.to_i
+										options201 = ["You fight with speed but before long you grow tired.", "You strike the Dark Man with several deep blows, he's down.", "The man slices your leg and makes a run for it. You're in no condition to pursue him."]
+										puts options201[useropt201]
+										if useropt201 == 0 
+											puts "The Dark Man overcomes you with his strength and he takes you down. This is the end of the line."
+											puts "Game over! Please play again."
+										elsif useropt201 == 1
+											puts "The Dark Man falls and you strike off his head. You survive, but just barely."
+											puts "Choose a number 0-2 for your next decision."
+											useropt202 = gets.chomp.to_i
+											options202 = ["You spot an odd building.", "You return to the lake, hoping to find help.", "You continue travelling through the dark and dangerous forest."]
+											if useropt202 == 0
+												puts "The building is a long ways away, but you can see people coming and going."
+											elsif useropt202 == 1
+												puts "When you return, you see that the water level is rapidly dropping."
+												puts "And when it empties... There's a treasure chest at the bottom!"
+											else 
+												puts "You approach the building, hoping for a closer look."
+											end
+										else 
+											puts "Your leg bleeds but you're likely going to survive. You decide you will get your revenge on the Dark Man."
+										end
+										
 									elsif useropt112000 == 1
 										puts "As you approach, you start to see the man's dark, skeletal looking face..."
 									else 
