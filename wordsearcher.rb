@@ -1,6 +1,6 @@
 #  wordsearcher.rb
 #  
-#  Copyright 2015 Cade <cade@cade-Satellite-C655>
+#  Copyright 2015 ClassyCritic
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
