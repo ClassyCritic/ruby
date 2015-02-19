@@ -24,10 +24,10 @@ def game1
 puts "Hooray! Let's begin!"
 puts "Please enter a number 0-2 for your first decision."
 useropt1 = gets.chomp.to_i
-options1 = ["You fall off a cliff and die. This is the end of the line.", "You find a house.", "You come across a forest."]
+options1 = ["You fall off a cliff and die.", "You find a house.", "You come across a forest."]
 	puts options1[useropt1]
 	if useropt1 == 0
-		puts "Game over! Please play again."
+		puts "Game over! Try again!"
 	elsif useropt1 == 1
 		puts "You move towards the house..."
 		puts "Choose a number 0-2 for your next decision."
