@@ -1,6 +1,6 @@
 #  calc.rb
 #  
-#  Copyright 2015 Cade <cade@cade-Satellite-C655>
+#  Copyright 2015 ClassyCritic 
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -25,7 +25,10 @@ puts "-- subtract"
 puts "-- multiply"
 puts "-- divide"
 function = gets.chomp
-if
+
+case function
+  
+  when 'add'
 	function.downcase == "add"
 	puts "Enter first number:"
 	addfirst = gets.chomp.to_f
@@ -33,7 +36,8 @@ if
 	addsecond = gets.chomp.to_f
 	addresult = addfirst + addsecond
 	puts addresult
-elsif 
+  
+  when 'subtract' 
 	function.downcase == "subtract"
 	puts "Enter first number:"
 	subfirst = gets.chomp.to_f
@@ -41,7 +45,8 @@ elsif
 	subsecond = gets.chomp.to_f
 	subresult = subfirst + subsecond
 	puts subresult
-elsif 
+ 
+  when 'multiply'
 	function.downcase == "multiply"
 	puts "Enter first number:"
 	multfirst = gets.chomp.to_f
@@ -49,7 +54,8 @@ elsif
 	multsecond = gets.chomp.to_f
 	multresult = multfirst * multsecond
 	puts multresult
-elsif 
+  
+  when 'divide'
 	function.downcase == "divide"
 	puts "Enter first number:"
 	divfirst = gets.chomp.to_f
@@ -57,7 +63,9 @@ elsif
 	divsecond = gets.chomp.to_f
 	divresult = divfirst / divsecond
 	puts divresult
-else 
+ 
+  else 
 	puts "Please enter a shown function."
 	end
+
 
