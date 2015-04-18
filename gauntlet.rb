@@ -28,12 +28,32 @@ end
 
 
 puts "Welcome to The Gauntlet"
+puts ' '
 puts "By: ClassyCritic"
+puts ' '
 puts "Loading . . ."
 sleep(1)
+puts ' '
+puts "Do you need help on how to play? ('Yes' or 'No')"
+help = gets.chomp
+case help.downcase
+	when "yes"
+		puts "The Gauntlet"
+		puts ' '
+		puts "Created by: ClassyCritic"
+		puts ' '
+		puts "Source code can be found at: https://github.com/ClassyCritic/ruby/blob/master/gauntlet.rb"
+		puts ' '
+		puts "All answers are 'yes' or 'no' unless stated otherwise."
+		puts ' '
+		puts "Good Luck!"
+		puts ' '
+	else 
+		puts "The Gauntlet is beginning . . ."
+	end
+
 puts "Would you like to play?"
 liketoplay = gets.chomp
-
 case liketoplay.downcase
 
 when "yes"
@@ -93,11 +113,10 @@ when "yes"
 						#Story here
                     
                 when "no"
-                    puts "You continue into the dark, dangerous forest!"
-                    puts "You encounter your first enemy!!!"
-                    puts "You pull out your " + weapon + "!"
+                    puts "You continue into the dark, dangerous forest . . . "
+                    puts "And a Basic Minion appears!"
                         #Add minion attacking, and speed factor for who attacks first.
-                        puts "You attack with your " + weapon + "!"
+                        puts "You attack with your " + weapon + "."
                         if weapon == "basic bow"
                             newhealth1 = 30 - basicbowattack
                             puts "The enemy minion has #{newhealth1} health!"
@@ -164,4 +183,6 @@ when "no"
 else
     puts "Didnt understand input."
 end
+
+
 
