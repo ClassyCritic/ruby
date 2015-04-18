@@ -102,7 +102,7 @@ when "yes"
                         puts "You keep your " + weapon + "!"
                     end
                     puts "**FOUND some Leather Armor!"
-                    puts "Would you like to keep the leather armor? (Type 'leather armor' if you'd like to keep it.)"
+                    puts "Would you like to keep the leather armor? (Type 'leather armor' to keep it.)"
                     armor = gets.chomp
                     case armor.downcase
                     when "leather armor"
@@ -174,6 +174,36 @@ when "yes"
     when '3'
         puts "You head towards the desert."
         puts "**FOUND a Basic Blade."
+        puts "Would you like to keep the basic blade? (Type 'basic blade' to keep it)"
+        weapon = gets.chomp
+        case weapon.downcase
+			when "basic blade" 
+				puts "You have obtained the " + weapon + " as your weapon!"
+				puts ' '
+			else
+				puts "The basic blade has been left behind."
+				puts ' '
+			end
+		
+		puts "The desert heat is already getting to you, but in the distance"
+		puts "you think you see a hut."
+		puts ' '
+		puts "-- Type 'leave' if you think this is just a mirage."
+		puts "-- Type 'find' to continue the trek to the hut."
+		firstdesert = gets.chomp
+		case firstdesert.downcase
+			when "leave"
+				puts "You continue into the desert. Your throat is parched."
+				puts "As you continue, you come across a caravan of merchants."
+				#Add story
+			else
+				puts "You're exhausted, but you eventually make it to the hut."
+				puts "The people there are kind and you decide to take a nap."
+				sleep (3)
+				puts ' '
+				puts "You awaken to the scent of a sweet-smelling food . . ."
+				#Add story
+			end
     else 
         puts "Didnt understand input."
     end
