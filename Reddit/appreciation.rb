@@ -15,7 +15,7 @@ loop do
 	  #The message you want to receive in the console if the condition is true.
       puts "It's APPreciation Saturday!"
       #The body, recipient, and subject of the message you'll be sending. This alerts your Reddit account that the condition has occurred.
-      client.send_message 'Wake up! Its APPreciation Saturday!', 'ClassyCritic', :subject => 'APPreciation!'
+      client.send_message 'Wake up! Its APPreciation Saturday!', 'USERNAME', :subject => 'APPreciation!'
       
       #What appears in the console if the condition is not true.
     else
