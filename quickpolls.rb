@@ -1,5 +1,6 @@
 require 'statistics2'
 puts "The first number you enter will be the person who's odds you want to see."
+puts " "
 puts "What's the first poll number?"
 firstnumber = gets.chomp.to_i
 puts "What's the second poll number?"
@@ -66,5 +67,6 @@ case
   puts "Nothing"
 end
 
+#Calculates the odds of the first number winning.
 projected_score = ((use1*use2*use3))
     puts "#{(projected_score*100).round(2)}""%"
