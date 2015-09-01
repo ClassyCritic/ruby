@@ -1,4 +1,5 @@
 require 'statistics2'
+
 puts "The first number you enter will be the person who's odds you want to see."
 puts " "
 puts "What's the first poll number?"
